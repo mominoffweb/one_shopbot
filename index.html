@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Web App</title>
+    <link rel="stylesheet" href="./style.css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <h1 class="sait_text">
+          Добро пожаловать: <br />
+          <span class="span_text">Саша</span>
+        </h1>
+        <div class="icons">
+          <span>
+            <a href="./app.html">
+              <img onclick="toggleContacts()" src="./Images/Phone.png" alt="" />
+            </a>
+          </span>
+          <span>
+            <img
+              width="40px"
+              height="40px"
+              src="./Images/logo (1).svg"
+              alt=""
+            />
+          </span>
+        </div>
+      </div>
+      <div class="web_images">
+        <img class="" src="./Images/WEBSITE.png" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <div class="main_btns">
+        <swiper-container
+          class="mySwiper"
+          navigation="true"
+          keyboard="true"
+          mousewheel="true"
+          slides-per-view="3"
+          space-between="30"
+          free-mode="true"
+        >
+          <swiper-slide class="btn_1">Все</swiper-slide>
+          <swiper-slide class="btn_2">веб-сайты</swiper-slide>
+          <swiper-slide class="btn_2">тeлeгрaм боты</swiper-slide>
+          <swiper-slide class="btn_2">Графический дизайн</swiper-slide>
+        </swiper-container>
+      </div>
+
+      <section class="main_project">
+        <div class="image-grid">
+          <div class="image-item">
+            <a href="./indeb.html">
+              <img class="sait_img" src="./Images/1-rasm.png" alt="Image 1" />
+            </a>
+          </div>
+          <div class="image-item">
+            <a href="./indeb.html">
+              <img class="sait_img" src="./Images/2-rasm.png" alt="Image 2" />
+            </a>
+          </div>
+          <div class="image-item">
+            <a href="./indeb.html">
+              <img class="sait_img" src="./Images/3-rasm.png" alt="Image 3" />
+            </a>
+          </div>
+          <div class="image-item">
+            <a href="">
+              <img class="sait_img" src="./Images/4-rasm.png" alt="Image 4" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
